@@ -1,14 +1,7 @@
-<h1>This is the main welcome page</h1>
+<div class = "container-fluid">
 
-<iframe src="https://appear.in/testing-room-name" width=700" height="600" frameborder="0"></iframe>
+	<h1 class = "col-lg-12 welcome-session">Welcome to your session with <%= current_user.email%></h1>
 
-<% if user_signed_in? %>
 
-	<%= link_to current_user.email, edit_user_registration_path %>
-	<%= link_to "Log Out", destroy_user_session_path, method: :delete %>
-	
-<% else %>
-
-	<%= link_to "Sign Up", new_user_registration_path %>
-	<%= link_to "Log In", new_user_session_path %>
-<% end %>
+</div>
+	<iframe src="https://appear.in/testing-room-name" width=700" height="600" frameborder="0"></iframe>
