@@ -2,6 +2,88 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+ul.nav li a, ul.nav li a:visited {
+    color: white !important;
+}
+
+
 .welcome-session{
 	text-align:center;
 }
+
+.navbar{
+  -webkit-box-shadow: 0 8px 6px -6px #2D2D2D;
+  -moz-box-shadow: 0 8px 6px -6px #2D2D2D;
+  box-shadow: 0 8px 6px -6px #2D2D2D;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  font-size:17px;
+    
+}
+
+.btn.btn-primary{
+	background-color:white;
+	color:black;
+	border:0;
+	text-transform: uppercase;
+}
+
+
+header{
+	background-image: url('peer-learning.jpg');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+header .intro-text {
+  padding-top: 100px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+header .intro-heading{
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 60px;
+  margin-bottom: 25px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+
+.mission{
+	text-align:center;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
