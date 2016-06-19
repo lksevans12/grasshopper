@@ -37,7 +37,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # User Authenticantion with Devise
 gem 'devise', '~> 4.1', '>= 4.1.1'
 
-
+# Admin Panel
+gem 'rails_admin', '~> 0.8.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
