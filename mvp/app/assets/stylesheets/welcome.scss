@@ -171,7 +171,7 @@ header .intro-heading{
 
 footer {
     padding: 50px 0;
-    background-color:#2d7f55
+    background-color:#2d7f55;
 }
 
 p{
@@ -183,8 +183,23 @@ p{
 	text-align:center;
 }
 
+.schedule-intro{
+	padding-top:100px;
+	text-align:center;
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .tutor-selection h2{
 	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cal-schedule{
+	padding-top:10px;
+	background-color: #D3D3D3;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	text-align:center;
+	height:430px;
 }
 
 footer p {
