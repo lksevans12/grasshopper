@@ -12,36 +12,36 @@
 
 		<div class = "col-lg-12 text-center">
 			<h1> Meet <%= @user.first_name %>! </h1>
+			
 		</div>
 		<% end %>
 
+		<div class = "col-lg-12 text-center">
+		<h4 class = "about-me"><%= @user.about_me %></h4>
+			<h4 class = "hobbie-info">Outside of school I enjoy <span class = "hobbies"><%= @user.hobbies %>!</span></h4>
 		<%= image_tag("/assets/PROFILE.jpg", class: "img-responsive img-rounded center-block") %>
 
-		<div class = "col-lg-12 text-center">
+			<h3 class = "school">
+				<%= @user.high_school %>, grade <%= @user.grade %>
+			</h3>
+
 			<% if @user.tutor == true %>
-			<h2 class = "tutor-boo">Tutor</h2>
+			<h3 class = "tutor-boo">Tutor, <%= @user.domains %></h3>
 
 			<div class = "teacher-cert">
 				<h4 class = "certified">Teacher certified <%= image_tag("/assets/teacher-cert.png", class: "img-responsive center-block teacher-apple-cert") %> </h4>
 			</div>
 
-		<% end %>
+			<% end %>
 
-			<h3 class = "school">
-				<%= @user.high_school %>, grade <%= @user.grade %>
-			</h3>
-		</div>
+			
+			
+		
 
-		<hr>
-
-		<div class = "specialities col-lg-6">
+			<hr>
 
 
 
-
-		</div>
-
-		<div class = "reviews col-lg-4">
 
 			<h4>Reviews</h4>
 

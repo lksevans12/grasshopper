@@ -34,6 +34,13 @@
 					
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+
+				<% if user_signed_in? && current_user.teacher == true %>
+
+					<li><%= link_to "Teacher Panel", rails_admin_path%><p></li>
+
+				<% end %>
+
 				<% if user_signed_in? %>
 				<li><%= link_to "Tutors", tutor_show_path%><p></li>
 					<li><%= link_to current_user.email, user_show_path(current_user.id) %></li>

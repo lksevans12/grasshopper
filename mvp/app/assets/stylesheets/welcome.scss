@@ -141,8 +141,8 @@ header .intro-heading{
 }
 
 .center-block{
-	height:150px;
-	width:200px;
+	height:250px;
+	width:300px;
 }
 
 .certified{
@@ -161,9 +161,30 @@ header .intro-heading{
 	display:inline-block;
 }
 
+.about-me, .hobbie-info{
+		font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hobbies{
+	text-transform: lowercase;
+}
+
 footer {
     padding: 50px 0;
     background-color:#2d7f55
+}
+
+p{
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tutor-selection{
+	padding-top:100px;
+	text-align:center;
+}
+
+.tutor-selection h2{
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 footer p {
