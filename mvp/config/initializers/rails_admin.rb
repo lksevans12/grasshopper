@@ -19,6 +19,11 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.authorize_with do
+    redirect_to main_app.root_path unless warden.user.teacher == true
+  end
+
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
