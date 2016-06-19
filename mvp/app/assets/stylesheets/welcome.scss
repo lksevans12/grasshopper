@@ -4,6 +4,11 @@
 
 ul.nav li a, ul.nav li a:visited {
     color: white !important;
+    padding-top:30px !important;
+}
+
+ul.nav li a:hover{
+    color: #2d7f55 !important;
 }
 
 
@@ -18,6 +23,7 @@ ul.nav li a, ul.nav li a:visited {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform:uppercase;
   font-size:17px;
+  height:80px;
     
 }
 
@@ -26,6 +32,10 @@ ul.nav li a, ul.nav li a:visited {
 	color:black;
 	border:0;
 	text-transform: uppercase;
+}
+
+.navbar-brand{
+	padding:10px;
 }
 
 

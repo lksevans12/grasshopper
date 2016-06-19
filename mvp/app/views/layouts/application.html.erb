@@ -23,7 +23,7 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<a class="navbar-brand" href="/"><strong>Grasshopper</strong></a>
+				<a class="navbar-brand" href="/"><%= image_tag("/assets/logo.png", class: "img-responsive logo") %></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,7 +34,7 @@
 				<ul class="nav navbar-nav navbar-right">
 				<% if user_signed_in? %>
 				<li><%= link_to "Tutors", tutor_show_path%><p></li>
-					<li><%= link_to current_user.email, edit_user_registration_path %></li>
+					<li><%= link_to current_user.email, user_show_path(current_user.id) %></li>
 					<li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
 					<% else %>
 
@@ -47,6 +47,8 @@
 	</nav>
 
 	<%= yield %>
+
+	<div class = "container"
 
 </body>
 </html>
