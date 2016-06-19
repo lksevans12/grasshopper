@@ -115,3 +115,42 @@ header .intro-heading{
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
 }
+
+.user-profile{
+	padding-top:100px;
+}
+
+.welcome-user{
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align:center;
+	color: #2d7f55;
+	padding-bottom:0;
+}
+
+.school{
+	padding:0 !important;
+}
+
+.btn.btn-primary.btn-lg.edit-user-link{
+	margin:0 auto;
+}
+
+.school{
+	text-transform:capitalize;
+}
+
+.center-block{
+	height:150px;
+	width:200px;
+}
+
+footer {
+    padding: 50px 0;
+    background-color:#2d7f55
+}
+
+footer p {
+    margin: 0;
+    color:white;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
