@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'tutor/show'
+  get 'tutor/show' => 'tutor#show'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
-  root "welcome#index" 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
+  root "welcome#index"
 
-  get 'user/:id'
+  get 'user/:id' => 'user#show'
   
 end
