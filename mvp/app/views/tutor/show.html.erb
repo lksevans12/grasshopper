@@ -32,16 +32,16 @@
 <%= i['grade']%>th grade</br>
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    
+
    <%= i['email']%>
-    
+
   </div>
   <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent appointment">
   Set Appointment
 </button>
 
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored message">
   Message <span class="glyphicon glyphicon-comment"></span>
 </button>
 
@@ -52,3 +52,58 @@
 </div>
 <% end %>
 </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Second Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Shoot them a message! </h4>
+        </div>
+        <div class="modal-body">
+        <iframe src="http://iamprithaj.com/Basic-Chat-App/index.html"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+    <script>
+        $('.appointment').click(function(e) {
+            e.preventDefault();
+            $('#myModal').modal('show');
+        });
+        $('.message').click(function(e) {
+            e.preventDefault();
+            $('#myModal2').modal('show');
+        });
+
+    </script>
