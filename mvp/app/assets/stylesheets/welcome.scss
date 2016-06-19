@@ -137,11 +137,28 @@ header .intro-heading{
 
 .school{
 	text-transform:capitalize;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .center-block{
 	height:150px;
 	width:200px;
+}
+
+.certified{
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tutor-boo{
+	padding:0 !important;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.teacher-apple-cert{
+	height:30px;
+	width:30px;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display:inline-block;
 }
 
 footer {

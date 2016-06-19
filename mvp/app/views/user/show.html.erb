@@ -15,19 +15,42 @@
 		</div>
 		<% end %>
 
+		<%= image_tag("/assets/PROFILE.jpg", class: "img-responsive img-rounded center-block") %>
+
 		<div class = "col-lg-12 text-center">
+			<% if @user.tutor == true %>
+			<h2 class = "tutor-boo">Tutor</h2>
 
-			<%= image_tag("/assets/PROFILE.jpg", class: "img-responsive img-rounded center-block") %>
+			<div class = "teacher-cert">
+				<h4 class = "certified">Teacher certified <%= image_tag("/assets/teacher-cert.png", class: "img-responsive center-block teacher-apple-cert") %> </h4>
+			</div>
 
+		<% end %>
 
 			<h3 class = "school">
 				<%= @user.high_school %>, grade <%= @user.grade %>
 			</h3>
 		</div>
 
-		<% if @user.tutor == true %>
-		<p>Tutor</p>
-		<% end %>
+		<hr>
+
+		<div class = "specialities col-lg-6">
+
+
+
+
+		</div>
+
+		<div class = "reviews col-lg-4">
+
+			<h4>Reviews</h4>
+
+			<p>Name: Suzie</p>	
+			<p>Date: June 18, 2016</p>
+			<p>Laura was such a great tutor. She walked through everything with me step by step and really helped me understand the assignment. </p>
+
+		</div>
+		
 
 
 
